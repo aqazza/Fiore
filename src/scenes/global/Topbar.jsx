@@ -11,7 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Topbar = () => {
   const theme = useTheme();
-  // const colors = tokens(theme.palette.mode);
+  const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
   return (
@@ -19,7 +19,7 @@ const Topbar = () => {
       {/* Search Bar here */}
       <Box
         display="flex"
-        // backgroundColor={colors.primary[400]}
+        backgroundColor={colors.primary[400]}
         borderRadius="3px"
       >
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
