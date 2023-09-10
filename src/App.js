@@ -1,9 +1,8 @@
-import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
-// import Dashboard from "./scenes/dashboard/Dashboard";
+import Dashboard from "./scenes/dashboard/index";
 // import Team from "./scenes/team/Team";
 // import Invoices from "./scenes/invoices/Invoices";
 // import Clients from "./scenes/clients/Clients";
@@ -13,6 +12,8 @@ import Sidebar from "./scenes/global/Sidebar";
 // import Pie from "./scenes/charts/Pie";
 // import FAQ from "./scenes/faq/FAQ";
 // import Geography from "./scenes/maps/Geography";
+import { ColorModeContext, useMode } from "./theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 
 function App() {
   const { colorMode, theme } = useMode();
@@ -26,8 +27,8 @@ function App() {
           <main className="content">
             <Topbar />
             <Routes>
-              {/* <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
+              <Route path="/" element={<Dashboard />} />
+              {/* <Route path="/team" element={<Team />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/clients" element={<Clients />} />
               <Route path="/charts/bar" element={<Bar />} />
