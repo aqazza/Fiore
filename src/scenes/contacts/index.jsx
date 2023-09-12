@@ -5,7 +5,7 @@ import { mockDataContacts } from "../../data/mockData";
 import Header from "../../components/Header";
 import { useTheme } from "@mui/material/styles";
 
-const Team = () => {
+const Contacts = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -81,11 +81,11 @@ const Team = () => {
         <DataGrid
           rows={mockDataContacts}
           columns={columns}
-          slots={{ Toolbar: GridToolbar }}
+          slots={{ toolbar: GridToolbar }}
         />
       </Box>
     </Box>
   );
 };
 
-export default Team;
+export default Contacts;
