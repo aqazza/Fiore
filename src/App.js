@@ -6,11 +6,11 @@ import Dashboard from "./scenes/dashboard/index";
 import Team from "./scenes/team/index";
 import Invoices from "./scenes/invoices/index";
 import Contacts from "./scenes/contacts/index";
-// import Bar from "./scenes/charts/Bar";
+import Bar from "./scenes/bar/index";
 import Form from "./scenes/form/index";
 // import Line from "./scenes/charts/Line";
 // import Pie from "./scenes/charts/Pie";
-// import FAQ from "./scenes/faq/FAQ";
+import FAQ from "./scenes/faq/index";
 // import Geography from "./scenes/maps/Geography";
 import Calendar from "./scenes/calendar";
 import { ColorModeContext, useMode } from "./theme";
@@ -33,12 +33,12 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/calendar" element={<Calendar />} />
-              {/*} <Route path="/charts/bar" element={<Bar />} />
-              <Route path="/charts/line" element={<Line />} />
+              <Route path="/bar" element={<Bar />} />
+              {/*}<Route path="/charts/line" element={<Line />} />
               <Route path="/charts/pie" element={<Pie />} /> */}
               <Route path="/form" element={<Form />} />
-              {/* <Route path="/faq" element={<FAQ />} />
-              <Route path="/maps" element={<Geography />} /> */}
+              <Route path="/faq" element={<FAQ />} />
+              {/*<Route path="/maps" element={<Geography />} /> */}
             </Routes>
           </main>
         </div>

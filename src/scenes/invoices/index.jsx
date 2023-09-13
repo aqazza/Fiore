@@ -2,9 +2,9 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { DataGrid } from "@mui/x-data-grid";
 import { mockDataInvoices } from "../../data/mockData";
-import AdminPanelSettingsOutlined from "@mui/icons-material/AdminPanelSettingsOutlined";
-import LockOpenOutlined from "@mui/icons-material/LockOpenOutlined";
-import SecurityOutlined from "@mui/icons-material/SecurityOutlined";
+// import AdminPanelSettingsOutlined from "@mui/icons-material/AdminPanelSettingsOutlined";
+// import LockOpenOutlined from "@mui/icons-material/LockOpenOutlined";
+// import SecurityOutlined from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
 
 const Invoices = () => {
