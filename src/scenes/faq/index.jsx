@@ -23,7 +23,9 @@ const FAQ = () => {
         <AccordionDetails>
           <Typography>
             This is a ReactJS application that uses Material UI and MUI Data
-            Grid to create a dashboard with a calendar, invoices, and a FAQ.
+            Grid to create a dashboard with a calendar, invoices, and a FAQ. It
+            also allows you to view data through various charts such as a bar
+            chart, a line chart, a pie chart, and a geography chart.
           </Typography>
         </AccordionDetails>
       </Accordion>
