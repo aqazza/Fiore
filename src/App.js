@@ -12,6 +12,7 @@ import Form from "./scenes/form/index";
 // import Pie from "./scenes/charts/Pie";
 // import FAQ from "./scenes/faq/FAQ";
 // import Geography from "./scenes/maps/Geography";
+import Calendar from "./scenes/calendar";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 
@@ -31,6 +32,7 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/calendar" element={<Calendar />} />
               {/*} <Route path="/charts/bar" element={<Bar />} />
               <Route path="/charts/line" element={<Line />} />
               <Route path="/charts/pie" element={<Pie />} /> */}
