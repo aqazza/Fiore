@@ -30,7 +30,7 @@ const Dashboard = () => {
       <Box>
         <Button
           sx={{
-            backgroundColor: colors.greenAccent[200],
+            backgroundColor: colors.greenAccent[600],
             color: colors.grey[100],
             fontSize: "14px",
             fontWeight: "bold",
@@ -68,8 +68,105 @@ const Dashboard = () => {
             }
           />
         </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="451,769"
+            subtitle="Sales Made"
+            progress="0.8"
+            increase="+43.5%"
+            icon={
+              <PointOfSaleIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="1,442,361"
+            subtitle="New Users"
+            progress="0.6"
+            increase="+3.5%"
+            icon={
+              <PersonAddIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="1,711"
+            subtitle="Page Views"
+            progress="0.9"
+            increase="+35%"
+            icon={
+              <TrafficIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        {/* Row 2 */}
+        <Box
+          gridColumn="span 8"
+          gridRow="span 2"
+          backgroundColor={colors.primary[400]}
+          >
+            <Box
+              mt="25px"
+              p="0 30px"
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Box>
+                <Typography
+                  variant="h5"
+                  fontWeight="600"
+                  color={colors.grey[100]}
+                >
+                  Revenue Overview
+                </Typography>
+                <Typography
+                  variant="h3"
+                  fontWeight="bold"
+                  color={colors.greenAccent[500]}
+                >
+                  $1,234.77
+                </Typography>
+          </Box>
+          <Box>
+            <IconButton>
+              <DownloadOutlinedIcon 
+              sx={{ fontSize: "26px", color: colors.greenAccent[500] }} 
+              />
+            </IconButton>
       </Box>
     </Box>
+    <Box height= "250px" m="-20px 0 0">
+      <LineChart isDashboard={true} />
+    </Box>
+  </Box>
+  </Box>
   );
 };
 
