@@ -1,5 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { tokens } from "../../theme";
 import Header from "../../components/Header";
+import { mockTransactions } from "../../data/mockData";
+import DownloadOutlinedIcon from "@mui/icons-material";
+import EmailOutlined from "@mui/icons-material";
+import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 
 const Dashboard = () => {
   return (
